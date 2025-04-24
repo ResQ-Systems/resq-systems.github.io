@@ -1,0 +1,3 @@
+function emailSubmit() {
+    return false;
+}

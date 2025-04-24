@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -10;
+}
+
+.bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.center {
+    left: 0;
+}
+
+.offset-left {
+    left: -30vw;
+}
+
+.subheading {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 3vh;
+    padding-bottom: 25vh
+}
+
+.heading {
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-size: 5vh;
+    font-weight: 400;
+}
+
+.text {
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-size: 2vh;
+}
+
+.button {
+    margin-top: 4vh;
+    background-color: none;
+    width: 100%;
+    height: 6vh;
+    color: white;
+    border: 2px solid #f36e23;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover{
+    background-color: #f36e23;
+}
+
+.t-right {
+    width: 20vw;
+    text-align: left;
+    padding-left: 65vw;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+}
+
+.t-right-gs {
+    width: 25vw;
+    text-align: left;
+    padding-left: 35vw;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+}
+
+.b-right-ca {
+    width: 25vw;
+    text-align: left;
+    padding-left: 55vw;
+    /* padding-top: 40vh; */
+}
+
+.t-left-ca {
+    width: 100%;
+    text-align: left;
+    padding-left: 10vw;
+    padding-top: 20vh;
+}
+
+.t-left-gs {
+    width: 20vw;
+    text-align: left;
+    padding-left: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+}
+
+.b-left {
+    width: 40vw;
+    text-align: left;
+    padding-left: 10vw;
+    padding-top: 40vh;
+}
+
+.b-right {
+    width: 20vw;
+    text-align: left;
+    padding-left: 10vw;
+    padding-bottom: 50vh;
+}
+
+.logo-link {
+    width: 7.5vw;
+    margin-left: 5vw;
+    justify-self: start;
+}
+
+.navbar {
+    padding-top: 2vh;
+    overflow: hidden;
+    display: grid;
+
+    align-items: center;
+    grid-template-columns: 7.5vw auto 7.5vw;
+    justify-items: center;
+
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 10;    
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 3vw;
+}
+
+.stats {
+    font-size: 2vh;
+    margin-left: 35%;
+    padding-bottom: 5%;
+}
+
+.stats-left {
+    font-size: 2vh;
+    margin-left: 0%;
+    padding-bottom: 30%;
+}
+
+td {
+    padding-top: 2vh;
+    padding-left: 10vw;
+}
+
+footer {
+    width: 100%;
+    background-color: #f36e23;
+    display: flex;
+    padding-bottom: 3vh;
+}
+
+.footer-left {
+    padding-left: 5vw;
+    padding-top: 5vh;
+}
+
+.footer-text {
+    color: black;
+    font-size: 2.5vh;
+    font-weight: 700;
+}
+
+.footer-form {
+    color: black;
+    font-size: 2.5vh;
+    width: 100%;
+}
+
+.footer-form input {
+    width: 100%;
+}
+
+#submit {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+#email {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+    background-color: #f36e23;
+    color: white;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 1vh;
+    padding-bottom: 0.5vh;
+    padding-left: 5%;
+    width: 95%;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: black;
+}
+
+.footer-right {
+    margin-left: 5vw;
+    color: black;
+    font-size: 2.5vh;
+    width: 30vw;
+}
+
+.footer-right hr {
+    border: 1px solid black;
+}

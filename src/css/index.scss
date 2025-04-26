@@ -1,13 +1,18 @@
+@use "brand";
+
+:root {
+    background-color: brand.$background-colour;
+    font-family: brand.$font-family-sans-serif;
+    font-weight: 400;
+    color: brand.$foreground-colour;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
-    background-color: black;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    color: white;
 }
 
 img {
@@ -84,15 +89,15 @@ img {
     width: 100%;
     height: 6vh;
     color: white;
-    border: 2px solid #f36e23;
+    border: 2px solid brand.$primary-colour;
     font-size: 2vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     --button-fill: 0px;
-    -webkit-box-shadow: inset 0 0 0 var(--button-fill) #f36e23;
-    box-shadow: inset 0 0 0 var(--button-fill) #f36e23;
+    -webkit-box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
+    box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
     transform: scale(1);
     transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -130,10 +135,7 @@ img {
     width: 25vw;
     text-align: left;
     padding-bottom: 0;
-    margin-top: 25vh;
-    margin-bottom: 20vh;
-    margin-left: 55vw;
-    margin-right: 5vw;
+    margin: 25vh 5vw 20vh 55vw;
 }
 
 .t-left-ca {
@@ -252,15 +254,15 @@ img {
 }
 
 #people-img {
-    background-color: black;
+    background-color: brand.$foreground-on-primary-colour;
     width: 40vw;
     height: 40vw;
     margin: auto;
 }
 
 #people {
-    color: black;
-    background-color: #f36e23;
+    color: brand.$foreground-on-primary-colour;
+    background-color: brand.$primary-colour;
     display: grid;
     grid-template-columns: 50vw auto;
     grid-template-rows: auto;
@@ -294,7 +296,7 @@ img {
 }
 
 .orange {
-    color: #f36e23;
+    color: brand.$primary-colour;
 }
 
 .contact-text {
@@ -330,7 +332,7 @@ img {
 }
 
 .contact-form input {
-    font-family: "Montserrat", sans-serif;
+    font-family: brand.$font-family-sans-serif;
     font-size: 3vh;
     border: 0;
     border-bottom: 3px solid black;
@@ -341,7 +343,7 @@ img {
 }
 
 .contact-form textarea {
-    font-family: "Montserrat", sans-serif;
+    font-family: brand.$font-family-sans-serif;
     font-weight: 400;
     font-size: 3vh;
     border: 0;
@@ -359,7 +361,7 @@ td {
 
 footer {
     width: 100%;
-    background-color: #f36e23;
+    background-color: brand.$primary-colour;
     display: flex;
     flex-direction: row;
     padding-bottom: 3vh;
@@ -387,7 +389,7 @@ footer {
 }
 
 #submit {
-    font-family: "Montserrat", sans-serif;
+    font-family: brand.$font-family-sans-serif;
     font-weight: 400;
     font-size: 2vh;
     background-color: black;
@@ -398,10 +400,10 @@ footer {
 }
 
 #email {
-    font-family: "Montserrat", sans-serif;
+    font-family: brand.$font-family-sans-serif;
     font-weight: 400;
     font-size: 1.7vh;
-    background-color: #f36e23;
+    background-color: brand.$primary-colour;
     color: black;
     border: 0;
     border-bottom: 1px solid black;
@@ -513,7 +515,7 @@ footer {
         transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:hover::after {
-        background: #f36e23;
+        background: brand.$primary-colour;
     }
 }
 

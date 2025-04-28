@@ -16,15 +16,19 @@
 <body>
     <page-header></page-header>
     <main>
-        <div class="container">
+        <section class="container">
             <picture class="bg-image center">
                 <img src="/img/home-bg.png" alt="Drone viewed from the back" />
             </picture>
             <div class="subheading">
                 <p>One stop solution for mountain search and rescue.</p>
             </div>
-        </div>
-        <div class="container" id="mission">
+            <div class="cta" onclick="window.location.replace('#mission')">
+                Scroll for more
+                <i class="chevron" aria-label="Downwards chevron"></i>
+            </div>
+        </section>
+        <section class="container" id="mission">
             <picture class="bg-image offset-left">
                 <!-- <img src="public/img/ranger-bg.png" /> -->
             </picture>
@@ -36,8 +40,8 @@
                     maximus justo, in aliquam arcu velit a nunc.</p>
                 <a href="mission.html" class="button">Learn More</a>
             </div>
-        </div>
-        <div class="container" id="ranger">
+        </section>
+        <section class="container" id="ranger">
             <picture class="bg-image offset-left">
                 <img src="img/ranger-bg.png" alt="Drone viewed from the top" />
             </picture>
@@ -65,8 +69,8 @@
                     <td>Stats</td>
                 </tr>
             </table>
-        </div>
-        <div class="container" id="ground">
+        </section>
+        <section class="container" id="ground">
             <picture class="bg-image">
                 <img src="/img/ground-bg.png" alt="image of the resQ ground station" />
             </picture>
@@ -95,8 +99,8 @@
                     <td>Stats</td>
                 </tr>
             </table>
-        </div>
-        <div class="container" id="connect">
+        </section>
+        <section class="container" id="connect">
             <picture class="bg-image">
                 <img src="/img/connect-bg.png" alt="image of the resq connect app" />
             </picture>
@@ -125,7 +129,7 @@
                     </tr>
                 </table>
             </div>
-        </div>
+        </section>
     </main>
     <page-footer></page-footer>
 </body>

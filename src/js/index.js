@@ -1,4 +1,6 @@
+import "../css/core.scss"
 import "../css/index.scss"
+import "../css/section_transitions.scss"
 import footer_comp from "./components/footer.js";
 import header_comp from "./components/header.js";
 
@@ -18,4 +20,13 @@ function toggleNav() {
 document.getElementById("nav-button").addEventListener("click", toggleNav);
 document.querySelectorAll(".mobile-nav").forEach((item) => {
   item.addEventListener("click", toggleNav);
+})
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => { entry.target.classList.toggle("visible_on_screen", entry.isIntersecting) })
+}, {
+  threshold: 0.3,
+})
+document.querySelectorAll("section").forEach(section => {
+  observer.observe (section)
 })

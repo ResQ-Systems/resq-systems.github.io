@@ -1,0 +1,9 @@
+// Transitions for all the sections on the site
+
+section > * {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+section.visible_on_screen > * {
+  opacity: 1;
+}

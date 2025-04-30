@@ -60,3 +60,56 @@ img {
           'GRAD' 0,
           'opsz' 24
 }
+
+
+a, a:visited, a:active, a:hover {
+  color: inherit;
+}
+
+.page-row {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+  }
+}
+
+h1 {
+  color: white;
+  text-align: left;
+  width: 100%;
+  font-size: 5vh;
+  font-weight: 400;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 3vh;
+  padding-bottom: 25vh;
+  display: block;
+}
+
+p {
+  color: white;
+  text-align: left;
+  width: 100%;
+  font-size: 2vh;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: black;
+}

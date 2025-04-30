@@ -16,38 +16,38 @@
 <body>
     <page-header></page-header>
     <main>
-        <section class="container">
+        <section class="page-row">
             <picture class="bg-image center">
                 <img src="/img/home-bg.png" alt="Drone viewed from the back" />
             </picture>
-            <div class="subheading">
-                <p>One stop solution for mountain search and rescue.</p>
-            </div>
+            <h2 class="subheading">
+                One stop solution for mountain search and rescue.
+            </h2>
             <div class="cta" onclick="window.location.replace('#mission')">
                 Scroll for more
                 <i class="chevron" aria-label="Downwards chevron"></i>
             </div>
         </section>
-        <section class="container" id="mission">
+        <section class="page-row" id="mission">
             <picture class="bg-image offset-left">
                 <!-- <img src="public/img/ranger-bg.png" /> -->
             </picture>
-            <div class="b-left">
-                <h1 class="heading">Our Mission</h1>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat accumsan turpis,
+            <div>
+                <h1 >Our Mission</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat accumsan turpis,
                     luctus sagittis est hendrerit vitae. Pellentesque mauris arcu, malesuada ac libero sit amet,
                     consectetur iaculis purus. Duis eu quam neque. Nulla agestas, nibh vel facilisis cursus, enim nisi
                     maximus justo, in aliquam arcu velit a nunc.</p>
                 <a href="mission.html" class="button">Learn More</a>
             </div>
         </section>
-        <section class="container" id="ranger">
+        <section class="page-row" id="ranger">
             <picture class="bg-image offset-left">
                 <img src="img/ranger-bg.png" alt="Drone viewed from the top" />
             </picture>
-            <div class="t-right">
-                <h1 class="heading">Ranger</h1>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat accumsan turpis,
+            <div>
+                <h1 >Ranger</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat accumsan turpis,
                     luctus
                     sagittis est hendrerit vitae.</p>
                 <a href="#ranger" class="button">Learn More</a>
@@ -55,7 +55,7 @@
             <picture class="image-mobile">
                 <img src="img/ranger-bg.png" alt="Drone viewed from the top" />
             </picture>
-            <table class="stats">
+            <table>
                 <tr>
                     <td>Stats</td>
                     <td>Stats</td>
@@ -70,22 +70,22 @@
                 </tr>
             </table>
         </section>
-        <section class="container" id="ground">
+        <section class="page-row" id="ground">
             <picture class="bg-image">
                 <img src="/img/ground-bg.png" alt="image of the resQ ground station" />
             </picture>
-            <div class="t-left-gs">
-                <h1 class="heading">Ground Station</h1>
+            <div>
+                <h1>Ground Station</h1>
             </div>
-            <div class="t-right-gs">
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat accumsan turpis,
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat accumsan turpis,
                     luctus sagittis est hendrerit vitae.</p>
                 <a href="#ranger" class="button">Learn More</a>
             </div>
             <picture class="image-mobile">
                 <img src="/img/ground-bg.png" alt="image of the resQ ground station" />
             </picture>
-            <table class="stats-left">
+            <table>
                 <tr>
                     <td>Stats</td>
                     <td>Stats</td>
@@ -100,16 +100,16 @@
                 </tr>
             </table>
         </section>
-        <section class="container" id="connect">
+        <section class="page-row" id="connect">
             <picture class="bg-image">
                 <img src="/img/connect-bg.png" alt="image of the resq connect app" />
             </picture>
-            <div class="t-left-ca">
-                <h1 class="heading">Connect App</h1>
+            <div>
+                <h1 >Connect App</h1>
             </div>
             <div class="ca-content">
-                <div class="b-right-ca">
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat accumsan
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat accumsan
                         turpis,
                         luctus sagittis est hendrerit vitae.</p>
                     <a href="#connect" class="button">Learn More</a>
@@ -117,7 +117,7 @@
                 <picture class="image-mobile">
                     <img src="/img/connect-bg.png" alt="image of the resq connect app" />
                 </picture>
-                <table class="stats-right">
+                <table>
                     <tr>
                         <td>Stats</td>
                     </tr>
@@ -132,6 +132,10 @@
         </section>
     </main>
     <page-footer></page-footer>
+<script type="module">
+    import "/src/css/home.scss";
+    import "/src/css/section_transitions.scss"
+</script>
 </body>
 
 </html>

@@ -1,6 +1,5 @@
 import "../css/core.scss"
-import "../css/index.scss"
-import "../css/section_transitions.scss"
+// import "../css/index.scss"
 import footer_comp from "./components/footer.js";
 import header_comp from "./components/header.js";
 

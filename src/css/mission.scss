@@ -1,0 +1,22 @@
+@use "brand";
+
+#people-img {
+  background-color: brand.$foreground-on-primary-colour;
+  width: 40vw;
+  height: 40vw;
+  margin: auto;
+}
+
+#people {
+  color: brand.$foreground-on-primary-colour;
+  background-color: brand.$primary-colour;
+  display: grid;
+  grid-template-columns: 50vw auto;
+  grid-template-rows: auto;
+}
+
+#dev {
+  display: grid;
+  grid-template-columns: 60vw auto;
+  grid-template-rows: 30vh auto;
+}

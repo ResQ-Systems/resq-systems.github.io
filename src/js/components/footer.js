@@ -1,3 +1,5 @@
+import "/src/css/foot.scss"
+
 const el = `
     <div class="footer-left">
         <picture class="footer-img">

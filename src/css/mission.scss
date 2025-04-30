@@ -20,3 +20,144 @@
   grid-template-columns: 60vw auto;
   grid-template-rows: 30vh auto;
 }
+
+section#team > div {
+  padding-left: 5vw;
+  font-size: 4vh;
+  margin-bottom: auto;
+  margin-top: 5vh;
+}
+
+.orange {
+  color: brand.$primary-colour;
+}
+
+section#contact {
+  background-color: white;
+  color: black;
+  display: grid;
+  grid-template-columns: 50vw auto;
+  grid-template-rows: 50vh auto;
+  *:not(.orange) {
+    color: black;
+  }
+}
+
+.contact-text {
+  font-size: 6vh;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: 5vw;
+  text-align: right;
+  font-weight: 500;
+}
+
+.contact-header {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  font-size: 5vh;
+  margin-left: auto;
+  margin-right: 5vw;
+}
+
+.contact-form {
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+}
+
+.contact-form form {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input {
+  font-family: brand.$font-family-sans-serif;
+  font-size: 3vh;
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-bottom: 3vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  outline: none;
+}
+
+.contact-form textarea {
+  font-family: brand.$font-family-sans-serif;
+  font-weight: 400;
+  font-size: 3vh;
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-bottom: 3vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  outline: none;
+}
+
+
+.title {
+  width: 100%;
+  font-size: 4vh;
+  margin-left: 5vw;
+  margin-right: auto;
+  padding-top: 30vh;
+}
+
+.subtitle {
+  margin-left: 5vw;
+  margin-right: auto;
+  font-size: 3.5vh;
+  padding-bottom: 30vh;
+}
+
+section#dev > div {
+  &:first-of-type {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    h1 {
+      width: 40vw;
+    }
+  }
+  &:last-of-type {
+    padding-left: 2vw;
+    width: 30vw;
+    margin-bottom: auto;
+    font-size: 2vh;
+  }
+}
+
+picture {
+  margin-bottom: auto;
+  img {
+    object-fit: contain;
+    width: 55vw;
+    padding-left: 5vw;
+    top: 0;
+  }
+}
+
+section#people > div {
+  margin-left: 2vw;
+  width: 30vw;
+  h1 {
+    font-size: 10vh;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 4vh;
+    margin-top: 0;
+  }
+  p {
+    font-size: 2vh;
+  }
+}

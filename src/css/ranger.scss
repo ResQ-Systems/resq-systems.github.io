@@ -1,0 +1,173 @@
+@use "brand";
+
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#top>div {
+    h3 {
+        font-size: 3vh;
+        font-weight: normal;
+        margin-bottom: 5vh;
+    }
+
+    &:first-of-type {
+        text-align: right;
+        padding-right: 5vw;
+    }
+
+    &:last-of-type {
+        text-align: left;
+        padding-left: 5vw;
+    }
+}
+
+#freezing {
+    background-color: brand.$primary-colour;
+    flex-direction: row;
+
+    h1 {
+        color: black;
+        font-weight: bold;
+        font-size: 13vh;
+        margin: 1vh;
+    }
+
+    p {
+        font-size: 4vh;
+        width: 30vw;
+        color: black;
+    }
+}
+
+#system {
+    display: grid;
+    grid-template-columns: 30vw auto;
+    grid-template-rows: 60vh auto;
+
+    background-color: white;
+    color: black;
+
+    picture {
+        width: 70vw;
+        align-self: end;
+
+        img {
+            object-fit: contain;
+        }
+    }
+}
+
+#system>div {
+    p {
+        font-size: 3vh;
+        font-weight: 500;
+    }
+
+    &:first-of-type {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        align-self: end;
+        text-align: right;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    &:last-of-type {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        width: 44vw;
+        align-self: start;
+    }
+}
+
+#design {
+    background-color: #e6e6e6;
+    align-content: center;
+    justify-content: center;
+    color: black;
+
+    h1 {
+        color: black;
+        font-weight: 700;
+        font-size: 6vh;
+    }
+
+    p {
+        font-size: 2.2vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    #container {
+        width: 70vw;
+        height: 70vh;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 45% auto;
+    }
+
+    #title {
+        grid-column: 1 / span 2;
+        padding-left: 5vw;
+        width: 60%;
+    }
+
+    #last {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 10vh;
+    }
+}
+
+#ranger-logo {
+    background-color: #e6e6e6;
+}
+
+#specs {
+    align-content: flex-start;
+    background-color: brand.$primary-colour;
+
+    h1 {
+        padding-top: 5vh;
+        padding-left: 5vw;
+        color: black;
+    }
+
+    #accordion-container {
+        margin-right: 5vw;
+        margin-left: 5vw;
+        width: 90vw;
+    }
+}
+
+.accordion {
+    background-color: gray;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 5vh;
+    margin-top: 2vh;
+}
+
+.panel {
+    padding: 0 2vw;
+    background-color: white;
+    color: black;
+    display: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+.active .panel {
+    display: block;
+}

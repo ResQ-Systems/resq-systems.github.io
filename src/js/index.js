@@ -7,7 +7,6 @@ import header_comp from "./components/header.js";
   customElements.define(cmp.name, cmp.component);
 });
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function toggleNav() {
   const x = document.getElementById("mobile-nav");
   if (x.className === "mobile-nav") {
@@ -16,6 +15,7 @@ function toggleNav() {
     x.className = "mobile-nav";
   }
 }
+
 document.getElementById("nav-button").addEventListener("click", toggleNav);
 document.querySelectorAll(".mobile-nav").forEach((item) => {
   item.addEventListener("click", toggleNav);
@@ -29,3 +29,10 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll("section").forEach(section => {
   observer.observe (section)
 })
+
+const acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.parentNode.classList.toggle("active");
+  });
+}

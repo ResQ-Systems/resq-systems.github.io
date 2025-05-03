@@ -18,6 +18,28 @@ body {
 img {
   object-fit: cover;
 }
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -10;
+  left: 0;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
 .visually-hidden {
   overflow: hidden;
   opacity: 0;
@@ -105,4 +127,92 @@ h2 {
 
 ::-ms-input-placeholder {
   color: black;
+}
+
+.orange {
+  color: brand.$primary-colour;
+}
+
+section#contact {
+  background-color: white;
+  color: black;
+  display: grid;
+  grid-template-columns: 50vw auto;
+  grid-template-rows: 50vh auto;
+  *:not(.orange) {
+    color: black;
+  }
+}
+
+.contact-text {
+  font-size: 6vh;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: 5vw;
+  text-align: right;
+  font-weight: 500;
+}
+
+.contact-header {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  font-size: 5vh;
+  margin-left: auto;
+  margin-right: 5vw;
+}
+
+.contact-form {
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+}
+
+.contact-form form {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input {
+  font-family: brand.$font-family-sans-serif;
+  font-size: 3vh;
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-bottom: 3vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  outline: none;
+}
+
+.contact-form #contact-submit {
+  border: 3px solid black;
+  background-color: white;
+  --button-fill: 0px;
+  -webkit-box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
+  box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
+  transform: scale(1);
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form #contact-submit:hover {
+  --button-fill: 6vh;
+}
+
+.contact-form #contact-submit:active {
+  transform: scale(0.95);
+}
+
+.contact-form textarea {
+  font-family: brand.$font-family-sans-serif;
+  font-weight: 400;
+  font-size: 3vh;
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-bottom: 3vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  outline: none;
 }

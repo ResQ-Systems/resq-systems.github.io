@@ -91,112 +91,91 @@
         </section>
         <section class="page-row" id="specs">
             <h1>Specifications</h1>
-            <div id="accordion-container">
-                <div class="active">
-                    <button class="accordion">Sensors</button>
-                    <div class="panel">
-                        <p>A drone is only as capable as the quality of sensors it can carry; Ranger is no exception.
-                            Our
-                            suite delivers an optimised, effective balance of quality, weight, and price. Ranger's
-                            cameras
-                            provide your ground team with birds-eye clarity streamable* directly to their devices via
-                            Connect, with the choice of either a <strong>35MP visual payload</strong>, or a
-                            <strong>visual / infrared pairing</strong> -
-                            granting maximum flexibility and <strong>low-light operability.</strong>
-                        </p>
-                        <p><small>* Ranger's visual suite is expected to provide smooth HD video at 30fps directly to
-                                operator devices for manual
-                                observation and/or control. In autonomous modes, full quality images from both pure
-                                visual +
-                                V&IR suites will be
-                                intermittently streamed to operator devices, with snapshots available on-demand.</small>
-                        </p>
-                    </div>
+            <div id="tab-container">
+                <div id="tab">
+                    <button class="tablink button active" onclick="openSpec(event, 'sensors')">Sensors</button>
+                    <button class="tablink button" onclick="openSpec(event, 'compute')">Compute</button>
+                    <button class="tablink button" onclick="openSpec(event, 'construction')">Construction</button>
+                    <button class="tablink button" onclick="openSpec(event, 'powerplant')">Powerplant</button>
                 </div>
 
-                <div>
-                    <button class="accordion">Compute</button>
-                    <div class="panel">
-                        <p>A drone is only as capable as the quality of sensors it can carry; Ranger is no exception.
-                            Our
-                            suite delivers an optimised, effective balance of quality, weight, and price. Ranger's
-                            cameras
-                            provide your ground team with birds-eye clarity streamable* directly to their devices via
-                            Connect, with the choice of either a 35MP visual payload, or a visual / infrared pairing -
-                            granting maximum flexibility and low-light operability.
-                        </p>
-                        <p><small>* Ranger's visual suite is expected to provide smooth HD video at 30fps directly to
-                                operator devices for manual
-                                observation and/or control. In autonomous modes, full quality images from both pure
-                                visual +
-                                V&IR suites will be
-                                intermittently streamed to operator devices, with snapshots available on-demand.</small>
-                        </p>
-                    </div>
+                <div id="sensors" class="tabcontent open">
+                    <p>A drone is only as capable as the quality of sensors it can carry; Ranger is no exception.
+                        Our
+                        suite delivers an optimised, effective balance of quality, weight, and price. Ranger's
+                        cameras
+                        provide your ground team with birds-eye clarity streamable* directly to their devices via
+                        Connect, with the choice of either a <strong>35MP visual payload</strong>, or a
+                        <strong>visual / infrared pairing</strong> -
+                        granting maximum flexibility and <strong>low-light operability.</strong>
+                    </p>
+                    <p><small>* Ranger's visual suite is expected to provide smooth HD video at 30fps directly to
+                            operator devices for manual
+                            observation and/or control. In autonomous modes, full quality images from both pure
+                            visual +
+                            V&IR suites will be
+                            intermittently streamed to operator devices, with snapshots available on-demand.</small>
+                    </p>
                 </div>
 
-                <div>
-                    <button class="accordion">Construction</button>
-                    <div class="panel">
-                        <p>A drone is only as capable as the quality of sensors it can carry; Ranger is no exception.
-                            Our
-                            suite delivers an optimised, effective balance of quality, weight, and price. Ranger's
-                            cameras
-                            provide your ground team with birds-eye clarity streamable* directly to their devices via
-                            Connect, with the choice of either a 35MP visual payload, or a visual / infrared pairing -
-                            granting maximum flexibility and low-light operability.
-                        </p>
-                        <p><small>* Ranger's visual suite is expected to provide smooth HD video at 30fps directly to
-                                operator devices for manual
-                                observation and/or control. In autonomous modes, full quality images from both pure
-                                visual +
-                                V&IR suites will be
-                                intermittently streamed to operator devices, with snapshots available on-demand.</small>
-                        </p>
-                    </div>
+                <div id="compute" class="tabcontent">
+                    <p>Sensor drones are nothing new, but Ranger's data-processing and digital control capability
+                        allow for <strong>a revolution in drone control and autonomy.</strong>
+                    </p>
+                    <p>Ranger's proprietary, custom compute stack processes and interprets video autonomously.
+                        Modern algorithms outpace and outmatch what operators can see in real-time. Able to
+                        intelligently and independently plot routes, navigate, identify points of interest, and alert
+                        your
+                        team to them, Ranger brings with it <strong>an entirely new workflow: letting the drone handle
+                            the data </strong> so you can <strong>better move and work on the ground</strong>. In line
+                        with Ranger's central
+                        vision - to <strong>give you options</strong> - manual operation is naturally always available.
+                        Choose the
+                        most effective workflow for the mission, and Ranger will have your back.
+                    </p>
+                    <p>Our approach to autonomous design <strong>minimises risk</strong>. With redundant systems,
+                        intelligent
+                        failsafes and real-time monitoring of essential systems, Ranger assesses its health
+                        constantly, and is capable of autonomous return and landing, even without a <span
+                            class="orange">Ground
+                            Station</span> connection. Data will be made available to the operator, and Ranger will
+                        record logs,
+                        allowing for detailed data analysis during debriefs.</p>
                 </div>
 
-                <div>
-                    <button class="accordion">Powerplant</button>
-                    <div class="panel">
-                        <p>A drone is only as capable as the quality of sensors it can carry; Ranger is no exception.
-                            Our
-                            suite delivers an optimised, effective balance of quality, weight, and price. Ranger's
-                            cameras
-                            provide your ground team with birds-eye clarity streamable* directly to their devices via
-                            Connect, with the choice of either a 35MP visual payload, or a visual / infrared pairing -
-                            granting maximum flexibility and low-light operability.
-                        </p>
-                        <p><small>* Ranger's visual suite is expected to provide smooth HD video at 30fps directly to
-                                operator devices for manual
-                                observation and/or control. In autonomous modes, full quality images from both pure
-                                visual +
-                                V&IR suites will be
-                                intermittently streamed to operator devices, with snapshots available on-demand.</small>
-                        </p>
-                    </div>
+                <div id="construction" class="tabcontent">
+                    <p>Ranger's construction will prioritise <strong>ease of assembly, lightness, and strength</strong>.
+                        We aim to
+                        produce components using innovative manufacturing techniques, keeping costs low while
+                        improving structural integrity. <strong>3D printing and modern composites</strong> will play a
+                        key role in
+                        Ranger's design. Rapid deployment can save lives - that's why we aim to <strong>remove
+                            hassle</strong>
+                        from setup by keeping Ranger as <strong>light and compact</strong> as possible. Our unique
+                        airframe*
+                        allows for a highly optimised carry case, minimising volume and maximising portability where
+                        it matters most. A fixed wing design improves longevity and performance over traditional
+                        quadcopters</p>
+                    <p><small>* Ranger is in rapid development, and its final design is subject to change. A tandem wing
+                            design is being
+                            explored in order to simplify setup and transportation and improve handling.</small></p>
                 </div>
 
-                <div>
-                    <button class="accordion">Mission</button>
-                    <div class="panel">
-                        <p>A drone is only as capable as the quality of sensors it can carry; Ranger is no exception.
-                            Our
-                            suite delivers an optimised, effective balance of quality, weight, and price. Ranger's
-                            cameras
-                            provide your ground team with birds-eye clarity streamable* directly to their devices via
-                            Connect, with the choice of either a 35MP visual payload, or a visual / infrared pairing -
-                            granting maximum flexibility and low-light operability.
-                        </p>
-                        <p><small>* Ranger's visual suite is expected to provide smooth HD video at 30fps directly to
-                                operator devices for manual
-                                observation and/or control. In autonomous modes, full quality images from both pure
-                                visual +
-                                V&IR suites will be
-                                intermittently streamed to operator devices, with snapshots available on-demand.</small>
-                        </p>
-                    </div>
+                <div id="powerplant" class="tabcontent">
+                    <p>The heart of a UAV is its powerplant; motors and batteries. For years, commercially-available
+                        drones have lagged behind security/military-based counterparts, with underpowered
+                        systems and poor range. Ranger will do better. Two variants are in development: a
+                        <strong>traditional medium-range battery-driven system</strong>, and an <strong>innovative
+                            long-range hybrid
+                            powerplant</strong>, combining gasoline power generation with batteries. Both variants will
+                        power
+                        the same VTOL motors; dedicated vertical-flight motors allow for balance and smooth
+                        transition between VTOL and cruise missions. The ability to stay out for longer than
+                        contemporary designs will provide a generational leap to long-loiter missions. Ranger will
+                        stay watching, however long you need it.
+                    </p>
                 </div>
+
             </div>
         </section>
         <section class="page-row" id="contact">
@@ -224,6 +203,7 @@
         </section>
     </main>
     <page-footer></page-footer>
+    <script src="src/js/ranger.js"></script>
     <script type="module">
         import "/src/css/ranger.scss";
         import "/src/css/section_transitions.scss"

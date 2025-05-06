@@ -206,55 +206,24 @@
     }
 }
 
-#ranger-logo {
-    background-color: #e6e6e6;
-
+#vision picture {
     @media (max-width: 1024px) {
         display: none;
     }
 }
 
-// #specs {
-//     align-content: flex-start;
-//     background-color: brand.$primary-colour;
+#vision > div {
+    margin-right: 10vw;
+    margin-left: auto;
+    width: 30vw;
+    font-size: 2vh;
 
-//     h1 {
-//         padding-top: 5vh;
-//         padding-left: 5vw;
-//         color: black;
-//     }
-
-//     #accordion-container {
-//         margin-right: 5vw;
-//         margin-left: 5vw;
-//         width: 90vw;
-//     }
-// }
-
-// .accordion {
-//     background-color: gray;
-//     cursor: pointer;
-//     width: 100%;
-//     text-align: left;
-//     border: none;
-//     outline: none;
-//     transition: 0.4s;
-//     font-size: 5vh;
-//     margin-top: 2vh;
-// }
-
-// .panel {
-//     padding: 0 2vw;
-//     background-color: white;
-//     color: black;
-//     display: none;
-//     overflow: hidden;
-//     margin: 0;
-// }
-
-// .active .panel {
-//     display: block;
-// }
+    @media (max-width: 1024px) {
+        margin-right: 5vw;
+        margin-left: 5vw;
+        width: 90vw;
+    }
+}
 
 #specs {
     background-color: black;

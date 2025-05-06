@@ -1,0 +1,111 @@
+@use "brand";
+
+.footer-img img {
+  object-fit: contain;
+}
+
+.footer-right {
+  margin-left: auto;
+  margin-right: 5vw;
+  color: black;
+  font-size: 2.5vh;
+  width: 40vw;
+}
+
+.footer-right hr {
+  border: 1px solid black;
+}
+
+
+footer {
+  width: 100%;
+  background-color: brand.$primary-colour;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3vh;
+}
+
+.footer-left {
+  padding-left: 5vw;
+  padding-top: 5vh;
+}
+
+.footer-text {
+  color: black;
+  font-size: 2vh;
+  font-weight: 700;
+}
+
+.footer-form {
+  color: black;
+  font-size: 1.2vw;
+  width: 100%;
+}
+
+.footer-form input {
+  width: 100%;
+}
+
+#submit {
+  font-family: brand.$font-family-sans-serif;
+  font-weight: 400;
+  font-size: 2vh;
+  background-color: black;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: white;
+  border: 0;
+}
+
+#email {
+  font-family: brand.$font-family-sans-serif;
+  font-weight: 400;
+  font-size: 1.7vh;
+  background-color: brand.$primary-colour;
+  color: black;
+  border: 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 1vh;
+  padding-bottom: 0.5vh;
+  padding-top: 0.5vh;
+  padding-left: 5%;
+  width: 95%;
+  outline: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+  footer {
+    flex-wrap: wrap;
+  }
+
+  .footer-right {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+  }
+
+  .footer-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+  }
+
+  .footer-left {
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .footer-text {
+    font-size: 3vh;
+  }
+
+  #email {
+    font-size: 3vh;
+  }
+
+  #submit {
+    font-size: 3vh;
+  }
+}

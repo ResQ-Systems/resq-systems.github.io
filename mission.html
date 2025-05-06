@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ResQ Systems - Mission</title>
+    <script type="module" src="/src/js/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="The one stop solution for mountain search and rescue" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <page-header></page-header>
+    <main>
+        <section class="page-row">
+            <div class="title">
+                <h1>Search and rescue <br /> has been left behind.</h1>
+            </div>
+            <div class="subtitle">
+                <p><i>We're changing that.</i></p>
+            </div>
+        </section>
+        <section class="page-row" id="dev">
+            <div>
+                <h1>ResQ Systems is developing an affordable end-to-end Unmanned Aerial System to revolutionise SAR and
+                    other industries.</h1>
+            </div>
+            <picture>
+                <img src="/img/props.png" />
+            </picture>
+            <div>
+                <p>Stirred to action by the generational leaps UAS technology has taken, our UK-based team gathered with
+                    one goal in mind: to put an end to imperfect solutions for mountain and lowland rescuers.</p>
+                <p>Drones are the biggest multiplier available to rescue teams searching for those in trouble - but they
+                    are forced to make do with mass-produced, commercial systems that leave little room for adaptation,
+                    little time for flying and <strong>little budget left afterwards.</strong></p>
+                <p>Drone operators are forced to adhere to the limitations of their systems, wasting valuable time and
+                    another pair of eyes, another pair of hands.</p>
+                <p>The technology to do better is here today.</p>
+                <p><strong>Together, we aim to bring an end to the makeshift.</strong></p>
+            </div>
+        </section>
+        <section class="page-row" id="people">
+            <picture id="people-img">
+
+            </picture>
+                <div>
+                    <h1>4785+</h1>
+                    <h3>Mountain and Lowland Rescue callouts in 2024* alone</h3>
+                </div>
+                <div>
+                    <p>The countryside is an escape for many. Social media and word-of-mouth inspires thousands to
+                        explore our beautiful natural landscapes, especially the more dangerous spots. More people
+                        brings more emergencies, and rescue teams across the country must respond to each and every one.
+                        Sometimes, over 75% of a team's callouts are for injured casualties**. When casualties are
+                        alone, trapped, cold, in severe danger - <strong>every second counts.</strong></p>
+                    <p><small>* 4785 individual team callouts between Mountain Rescue England & Wales and Mountain
+                            Rescue Scotland between 1 Jan - 31 Dec 2024. Detailed statistics from other groups for 2024
+                            yet to release.<br />
+                            ** Mountain Rescue England & Wales Annual Report 2024 - 79% of incidents in 2023 listed as
+                            involving casualties.</small></p>
+                </div>
+        </section>
+        <section class="page-row" id="team">
+            <div>
+                <h1>Meet the team</h1>
+            </div>
+        </section>
+        <section class="page-row" id="contact">
+            <div class="contact-text">
+                <p>Ready to <span class="orange">enhance</span> your operations?</p>
+            </div>
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="contact-form">
+                <form onsubmit="return false;">
+                    <label for="name" class="visually-hidden">Full name</label>
+                    <input type="text" id="name" placeholder="Full name" />
+                    <label for="company-name" class="visually-hidden">Organisation name</label>
+                    <input type="text" id="company-name" placeholder="Organisation name" />
+                    <label for="contact-email" class="visually-hidden">Email</label>
+                    <input type="email" id="contact-email" placeholder="Email" />
+                    <label for="phone" class="visually-hidden">Phone</label>
+                    <input type="tel" id="phone" placeholder="Phone" />
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea id="message" rows="5" placeholder="Message"></textarea>
+                    <input type="submit" id="contact-submit" value="Submit" />
+                </form>
+            </div>
+        </section>
+    </main>
+    <page-footer></page-footer>
+    <script type="module">
+        import "/src/css/mission.scss";
+        import "/src/css/section_transitions.scss"
+    </script>
+</body>
+
+</html>

@@ -14,11 +14,11 @@ const el = `
         </form>
     </div>
     <div class="footer-right">
-        <p>Our mission</p>
+        <a href="mission.html"><p>Our mission</p></a>
         <hr/>
-        <p>+44 0000000</p>
+        <a href="tel:+447478227150"><p>+44 7478 227150</p></a>
         <hr/>
-        <p>info@resq.systems</p>
+        <a href="mailto:info@resq.systems"><p>info@resq.systems</p></a>
         <hr/>
         <p>Sheffield, United Kingdom</p>
     </div>`;

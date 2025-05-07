@@ -1,12 +1,12 @@
 
-function openSpec(evt, name) {
+export function openSpec(evt, name) {
     let isOpen = document.getElementById(name).className.includes("open");
-    tabcontent = document.getElementsByClassName("tabcontent");
+    let tabcontent = document.getElementsByClassName("tabcontent");
     for (let i = 0; i < tabcontent.length; i++) {
         tabcontent[i].className = tabcontent[i].className.replace(" open", "");
     }
 
-    tablinks = document.getElementsByClassName("tablink");
+    let tablinks = document.getElementsByClassName("tablink");
     for (let i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }

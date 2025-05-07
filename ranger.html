@@ -217,10 +217,12 @@ rugged workhorse. A vigilant observer.</p>
         </section>
     </main>
     <page-footer></page-footer>
-    <script src="src/js/tabs.js"></script>
     <script type="module">
         import "/src/css/ranger.scss";
-        import "/src/css/section_transitions.scss"
+        import "/src/css/section_transitions.scss";
+
+        import { openSpec } from "/src/js/tabs.js";
+        window.openSpec = openSpec;
     </script>
 </body>
 

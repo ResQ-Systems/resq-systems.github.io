@@ -132,10 +132,12 @@ contributing? <strong>Contact us</strong> and see what we can do for you.</small
         </section>
     </main>
     <page-footer></page-footer>
-    <script src="src/js/tabs.js"></script>
     <script type="module">
         import "/src/css/connect.scss";
-        import "/src/css/section_transitions.scss"
+        import "/src/css/section_transitions.scss";
+
+        import { openSpec } from "/src/js/tabs.js";
+        window.openSpec = openSpec;
     </script>
 </body>
 

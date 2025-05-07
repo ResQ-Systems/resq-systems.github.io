@@ -145,7 +145,9 @@ section#contact {
 }
 
 .contact-text {
-  font-size: 6vh;
+  p {
+    font-size: 6vh;
+  }
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
   width: 30vw;
@@ -158,14 +160,31 @@ section#contact {
 .contact-header {
   grid-row: 2 / span 1;
   grid-column: 1 / span 1;
-  font-size: 5vh;
   margin-left: auto;
   margin-right: 5vw;
+  h1 {
+    text-align: right;
+    font-size: 7vh;
+  }
+
+  p {
+    text-align: right;
+    font-size: 5vh;
+    margin-bottom: 0;
+  }
 }
 
 .contact-form {
   grid-row: 1 / span 2;
   grid-column: 2 / span 1;
+
+  h1 {
+    font-size: 6vh;
+    margin-left: 5vw;
+    a{
+    text-decoration: none;
+    }
+  }
 }
 
 .contact-form form {
@@ -215,4 +234,80 @@ section#contact {
   padding-bottom: 1vh;
   padding-top: 1vh;
   outline: none;
+}
+
+#tab-container {
+    display: grid;
+    grid-template-columns: 50vw auto;
+    grid-template-rows: auto;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: auto;
+        grid-template-rows: 18vh auto;
+    }
+}
+
+#tab {
+    overflow: hidden;
+    grid-column: 1 / span 1;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tabcontent {
+    display: none;
+    background-color: brand.$primary-colour;
+    color: black;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    margin-right: 5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 55vh;
+    font-size: 2vh;
+
+
+    small {
+        font-size: 2vh;
+    }
+
+    @media (max-width: 1024px) {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+        font-size: 2.2vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        height: auto;
+        margin-bottom: 3vh;
+        small {
+            font-size: 1.7vh;
+        }
+    }
+}
+
+.tablink {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 40vw;
+
+    @media (max-width: 1024px) {
+        width: 40vw;
+        margin-top: 0;
+    }
+}
+
+.tablink.active {
+    background-color: brand.$primary-colour;
+}
+
+.open {
+    display: block;
+}
+
+p {
+  font-size: 2vh;
 }

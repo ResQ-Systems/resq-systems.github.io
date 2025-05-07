@@ -1,0 +1,151 @@
+@use "brand";
+
+#title {
+    display: grid;
+    grid-template-columns: 50vw auto;
+    grid-template-rows: 50vh auto;
+
+    div {
+        width: 30vw;
+
+        h1 {
+            font-size: 3.5vh;
+        }
+
+        p {
+            font-size: 2.2vh;
+        }
+
+        &:first-of-type {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+            align-self: end;
+            justify-self: center;
+            margin-bottom: 5vh;
+        }
+
+        &:last-of-type {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+
+            align-self: end;
+            justify-self: start;
+            margin-bottom: 5vh;
+            margin-left: 7vw;
+            width: 20vw;
+        }
+    }
+}
+
+#network {
+    background-color: white;
+    z-index: -20;
+    display: grid;
+    grid-template-columns: 60vw auto;
+    grid-template-rows: auto;
+
+    picture {
+        transform: translate(-5vw, -28vh);
+        height: 120vh;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    div {
+        color: black;
+
+        h1 {
+            color: black;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        &:first-of-type {
+            width: 20vw;
+            justify-self: end;
+            margin-top: 25vh;
+            margin-right: 5vw;
+        }
+
+        &:last-of-type {
+            width: 25vw;
+            font-size: 2vh;
+        }
+    }
+}
+
+#durable {
+    div {
+    margin-right: 10vw;
+    margin-left: auto;
+    }
+
+    h1 {
+        width: 10vw;
+    }
+
+    p {
+        font-size: 2vh;
+        width: 25vw;
+    }
+}
+
+#redundancy {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+
+    h1 {
+        color: black;
+        width: 20vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        align-self: end;
+        font-weight: bold;
+        font-size: 6vh;
+    }
+
+    p {
+        font-size: 2.5vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 35vh;
+        background-color: brand.$primary-colour;
+        width: 40vw;
+        height: 70vh;
+    }
+}
+
+#battery {
+    display: grid;
+    grid-template-columns: 50vw auto;
+    grid-template-rows: auto;
+
+    div {
+        &:first-of-type {
+            width: 20vw;
+            justify-self: end;
+            margin-right: 10vw;
+            padding-top: 20vh;
+
+            h1 {
+                text-align: right;
+            }
+        }
+
+        &:last-of-type {
+            font-size: 2vh;
+            width: 24vw;
+            margin-left: 10vw;
+        }
+    }
+}

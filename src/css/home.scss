@@ -7,6 +7,7 @@
   align-items: center;
   cursor: pointer;
 }
+
 .chevron {
   position: relative;
   border: solid 1px white;
@@ -18,6 +19,7 @@
   border-right: none;
   animation: bob 500ms alternate infinite;
 }
+
 .chevron::after {
   content: '';
   position: absolute;
@@ -34,6 +36,7 @@
   0% {
     transform: translateY(-10%) rotate(225deg);
   }
+
   100% {
     transform: translateY(10%) rotate(225deg);
   }
@@ -42,6 +45,7 @@
 .offset-left {
   left: -30vw;
   object-fit: cover;
+
   @media (max-width: 1024px) {
     left: 0;
     top: 5vh;
@@ -50,6 +54,7 @@
 
 .image-mobile {
   display: none;
+
   @media (max-width: 1024px) {
     display: block;
   }
@@ -60,37 +65,40 @@
   width: 100%;
 }
 
-section#ranger > div {
+section#ranger>div {
   width: 20vw;
   text-align: left;
   padding-left: 65vw;
   padding-top: 10vh;
   padding-bottom: 20vh;
-  table {
-    font-size: 2vh;
-    margin-left: 35%;
-    padding-bottom: 5%;
-  }
+
   @media (max-width: 1024px) {
     width: 80vw;
     padding-left: 0;
     padding-bottom: 0;
-    table {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      padding-bottom: 0;
-    }
   }
 }
 
-section#ground > div {
+section#ranger>table {
+  font-size: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5vh;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+    padding-bottom: 0;
+  }
+}
+
+section#ground>div {
   &:first-of-type {
     width: 20vw;
     text-align: left;
     padding-left: 10vw;
     padding-top: 10vh;
     padding-bottom: 20vh;
+
     @media (max-width: 1024px) {
       align-self: flex-start;
       padding-bottom: 0;
@@ -98,23 +106,27 @@ section#ground > div {
       width: 80vw;
     }
   }
+
   &:last-of-type {
     width: 25vw;
     text-align: left;
     padding-left: 35vw;
     padding-top: 15vh;
     padding-bottom: 20vh;
+
     table {
       font-size: 2vh;
       padding-top: 20vh;
       margin-left: 0;
       padding-bottom: 30%;
     }
+
     @media (max-width: 1024px) {
       padding-top: 0;
       padding-left: 5vw;
       padding-bottom: 0;
       width: 80vw;
+
       table {
         margin-left: auto;
         margin-right: auto;
@@ -126,38 +138,49 @@ section#ground > div {
   }
 }
 
-section#connect > div {
+section#connect>div {
   &:first-of-type {
     width: 100%;
     text-align: left;
     padding-left: 10vw;
     padding-top: 20vh;
     align-self: flex-start;
+
     @media (max-width: 1024px) {
       padding-top: 10vh;
     }
   }
+
   &:last-of-type {
     display: flex;
     flex-direction: row-reverse;
     align-self: flex-start;
+
     div {
       width: 25vw;
       text-align: left;
       padding-bottom: 0;
-      margin: 25vh 5vw 20vh 55vw;
+      margin: 25vh 5vw 20vh 25vw;
     }
+
     table {
       font-size: 2vh;
-      margin-left: 0;
+      margin-left: 7vw;
       margin-right: auto;
       padding-bottom: 10vh;
       top: 0;
       align-self: flex-start;
     }
+
+    td {
+      padding-left: 3vw;
+      width: 15vw;
+    }
+
     @media (max-width: 1024px) {
       flex-direction: column;
       width: 100%;
+
       div {
         padding-top: 0;
         width: 80vw;
@@ -165,11 +188,13 @@ section#connect > div {
         margin-top: 0;
         margin-bottom: 0;
       }
+
       .image-mobile {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
       }
+
       table {
         margin-left: auto;
         margin-right: auto;
@@ -182,11 +207,12 @@ section#connect > div {
   }
 }
 
-section#mission > div {
+section#mission>div {
   width: 20vw;
   text-align: left;
   padding-left: 10vw;
   padding-bottom: 50vh;
+
   @media (max-width: 1024px) {
     width: 80vw;
     padding-left: 0;
@@ -204,6 +230,7 @@ section#connect>.bg-image {
 td {
   padding-top: 2vh;
   padding-left: 10vw;
+
   @media (max-width: 1024px) {
     text-align: center;
     padding-left: 0;
@@ -216,6 +243,7 @@ td {
   .center {
     display: block;
   }
+
   h2 {
     padding-left: 0;
     padding-top: 30vh;
@@ -225,7 +253,7 @@ td {
 
 
 
-section > p {
+section>p {
   color: white;
   text-align: left;
   width: 100%;

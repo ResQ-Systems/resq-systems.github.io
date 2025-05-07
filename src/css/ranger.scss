@@ -3,7 +3,7 @@
 #top {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 
     @media (max-width: 1024px) {
         picture {
@@ -26,14 +26,12 @@
 
     &:first-of-type {
         text-align: right;
-        padding-right: 5vw;
-        padding-left: 5vw;
+        margin-right: 20vw;
     }
 
     &:last-of-type {
         text-align: left;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        margin-left: 20vw;
     }
 
     @media (max-width: 1024px) {
@@ -143,7 +141,7 @@
 }
 
 #design {
-    background-color: #e6e6e6;
+    background-color: brand.$primary-gray;
     align-content: center;
     justify-content: center;
     color: black;
@@ -234,76 +232,4 @@
         margin-left: 5vw;
         margin-top: 10vh;
     }
-}
-
-#tab-container {
-    display: grid;
-    grid-template-columns: 50vw auto;
-    grid-template-rows: auto;
-    width: 100%;
-    height: 100%;
-
-    @media (max-width: 1024px) {
-        grid-template-columns: auto;
-        grid-template-rows: 18vh auto;
-    }
-}
-
-#tab {
-    overflow: hidden;
-    grid-column: 1 / span 1;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.tabcontent {
-    display: none;
-    background-color: white;
-    color: black;
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-    margin-right: 5vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    height: 55vh;
-    font-size: 2.5vh;
-
-
-    small {
-        font-size: 2vh;
-    }
-
-    @media (max-width: 1024px) {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
-        font-size: 2.2vh;
-        margin-right: 5vw;
-        margin-left: 5vw;
-        height: auto;
-        margin-bottom: 3vh;
-        small {
-            font-size: 1.7vh;
-        }
-    }
-}
-
-.tablink {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 40vw;
-
-    @media (max-width: 1024px) {
-        width: 40vw;
-        margin-top: 0;
-    }
-}
-
-.tablink.active {
-    background-color: brand.$primary-colour;
-}
-
-.open {
-    display: block;
 }

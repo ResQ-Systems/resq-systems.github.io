@@ -1,0 +1,82 @@
+@use "brand";
+
+#title {
+    p {
+    font-size: 3.5vh;
+    }
+    div {
+        width: 20vw;
+        margin-right: 10vw;
+        margin-left: auto;
+        transform: translateY(20vh);
+    }
+}
+
+#details {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    div {
+        font-size: 2.5vh;
+
+        &:first-of-type {
+            width: 25vw;
+            margin-right: 10vw;
+            margin-left: auto;
+        }
+
+        &:last-of-type {
+            width: 30vw;
+            margin-left: 5vw;
+            margin-right: auto;
+        }
+    }
+}
+
+#features {
+    align-content: start;
+
+    h1 {
+        margin-left: 5vw;
+        margin-top: 10vh;
+    }
+
+    .tabcontent {
+        font-size: 2.5vh;
+        font-weight: 500;
+        flex-direction: column;
+        justify-content: center;
+        p {
+            width: 80%;
+            margin-left: 10%;
+
+        }
+    }
+    .open {
+        display: flex;
+    }
+}
+
+#choice {
+    background-color: brand.$primary-gray;
+    h1 {
+        color: black;
+        font-size: 3vh;
+        text-align: center;
+    }
+}
+
+.contact-text p {
+    &:first-of-type {
+        font-size: 2vh;
+        width: 20vw;
+        text-align: right;
+        margin-left: auto;
+        font-weight: bold;
+    }
+}
+
+.contact-text {
+    justify-self: end;
+}

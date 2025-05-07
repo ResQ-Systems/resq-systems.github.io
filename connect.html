@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ResQ Systems - Connect</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <script type="module" src="/src/js/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="The one stop solution for mountain search and rescue" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <page-header></page-header>
+    <main>
+        <section class="page-row" id="title">
+            <picture class="bg-image">
+                <img src="/img/connect-bg.png" />
+            </picture>
+            <div>
+                <p>Out in the field, data is everything</p>
+                <p><strong class="orange">ResQ Connect</strong> ensures that you don't miss a beat.</p>
+            </div>
+        </section>
+        <section class="page-row" id="details">
+            <picture class="bg-image">
+                <img src="/img/connect-macbook-bg.png" />
+            </picture>
+            <div>
+                <p>Connect is an under-development
+                    cross-platform application, designed
+                    specifically to control Ranger, and
+                    incorporating tools and services to
+                    assist your team.</p>
+            </div>
+            <div>
+                <p>
+                The ResQ Vision is one of autonomy and
+                optimisation. In line with Ranger's
+                intelligent design, Connect presents the
+                user with a radically efficient control
+                panel. Points of interest are clearly
+                mapped, along with high-resolution
+                imagery, video clips, and more. </p>
+                <p>
+                Connect simplifies your missions by
+                providing an autopilot interface. Define
+                search areas, orbit paths, or let Ranger
+                loiter autonomously within visual line of
+                sight of your team.
+                </p>
+            </div>
+        </section>
+        <section class="page-row" id="features">
+            <h1>Features</h1>
+            <div id="tab-container">
+                <div id="tab">
+                    <button class="tablink button active" onclick="openSpec(event, 'risk')">Risk Mitigation</button>
+                    <button class="tablink button" onclick="openSpec(event, 'manual')">Manual Control</button>
+                    <button class="tablink button" onclick="openSpec(event, 'user')">Multi-User Connections</button>
+                    <button class="tablink button" onclick="openSpec(event, 'extra')">Extra</button>
+                </div>
+
+                <div id="risk" class="tabcontent open">
+                    <p>From startup to shutdown, Connect
+                        minimises risk. Checklists and
+                        procedures are integrated into
+                        software, substituting paper charts.
+                        Access a health overview of Ranger
+                        at any time, displaying live telemetry
+                        and equipment statuses. Trigger an
+                        emergency autoland at any time,
+                        and define geofences freely.</p>
+                </div>
+                <div id="manual" class="tabcontent">
+                    <p>For teams requiring maximum flexibility, Connect transforms into a mobile RC controller.
+                        Operators may control Ranger using virtual control sticks, or access an intelligent camera
+                        interface, allowing effective operation in all circumstances.
+                    </p>
+                </div>
+                <div id="user" class="tabcontent">
+                    <p>Powered by <strong>Ground Station</strong>, Connect allows multiple users to access Ranger's
+                        telemetry
+                        simultaneously. Designate a qualified individual as the Pilot, and remain conformant to CAA
+                        regulations, while effortlessly exchanging data between your team members</p>
+                </div>
+                <div id="extra" class="tabcontent">
+                    <p>Beyond drone control, Connect will incorporate networked tools, collecting and recording
+                        data on searched areas to be reviewed later. Use Connect's file transfer function to
+                        exchange imagery and video to distant team members, or configure push notifications to
+                        receive real-time updates from Ranger throughout your expedition.
+                    </p>
+                    <p><strong>Autonomous flight or manual search. With Connect, the choice is yours.
+                        </strong></p>
+                    <p><small>ResQ are committed to building Connect alongside customers. Interested in
+contributing? <strong>Contact us</strong> and see what we can do for you.</small></p>
+                </div>
+            </div>
+        </section>
+        <section class="page-row" id="choice">
+            <h1>Autonomous flight or manual search. With <span class="orange">Connect</span>, the choice is yours.</h1>
+        </section>
+        <section class="page-row" id="contact">
+            <div class="contact-text">
+                <p>ResQ are committed to building Connect alongside customers.</p>
+                <p>Interested in contributing?</p>
+            </div>
+            <div class="contact-header">
+                <h1><strong class="orange">Contact Us</strong></h1>
+            </div>
+            <div class="contact-form">
+                <!-- <form onsubmit="return false;">
+                    <label for="name" class="visually-hidden">Full name</label>
+                    <input type="text" id="name" placeholder="Full name" />
+                    <label for="company-name" class="visually-hidden">Organisation name</label>
+                    <input type="text" id="company-name" placeholder="Organisation name" />
+                    <label for="contact-email" class="visually-hidden">Email</label>
+                    <input type="email" id="contact-email" placeholder="Email" />
+                    <label for="phone" class="visually-hidden">Phone</label>
+                    <input type="tel" id="phone" placeholder="Phone" />
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea id="message" rows="5" placeholder="Message"></textarea>
+                    <input type="submit" id="contact-submit" value="Submit" />
+                </form> -->
+                <h1><a href="mailto:info@resq.systems">info@resq.systems</a></h1>
+            </div>
+        </section>
+    </main>
+    <page-footer></page-footer>
+    <script src="src/js/tabs.js"></script>
+    <script type="module">
+        import "/src/css/connect.scss";
+        import "/src/css/section_transitions.scss"
+    </script>
+</body>
+
+</html>

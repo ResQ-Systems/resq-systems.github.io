@@ -2,13 +2,41 @@
 
 #title {
     p {
-    font-size: 3.5vh;
+        font-size: 3.5vh;
     }
+
     div {
         width: 20vw;
         margin-right: 10vw;
         margin-left: auto;
         transform: translateY(20vh);
+    }
+
+    @media (max-width: 1024px) {
+        picture {
+            display: block;
+        }
+
+        div {
+            width: 80vw;
+        }
+
+        div>p {
+            &:first-of-type {
+                margin-left: auto;
+                margin-right: auto;
+                width: 50vw;
+                transform: translateX(15vw);
+            }
+
+            &:last-of-type {
+                width: 50vw;
+                margin-top: 25vh;
+                margin-left: auto;
+                margin-right: auto;
+                transform: translateX(-10vw);
+            }
+        }
     }
 }
 
@@ -32,6 +60,34 @@
             margin-right: auto;
         }
     }
+
+    @media (max-width: 1024px) {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 20vh 30vh auto;
+
+        div {
+
+            &:first-of-type {
+                width: 90vw;
+                align-self: end;
+                grid-row: 1 / span 1;
+                margin: 0;
+            }
+
+            &:last-of-type {
+                width: 90vw;
+                grid-row: 3 / span 1;
+                align-self: start;
+                margin: 0;
+            }
+        }
+
+        picture {
+            display: block;
+            grid-row: 2 / span 1;
+        }
+    }
 }
 
 #features {
@@ -47,12 +103,14 @@
         font-weight: 500;
         flex-direction: column;
         justify-content: center;
+
         p {
             width: 80%;
             margin-left: 10%;
 
         }
     }
+
     .open {
         display: flex;
     }
@@ -60,10 +118,19 @@
 
 #choice {
     background-color: brand.$primary-gray;
+    justify-content: center;
+
     h1 {
         color: black;
         font-size: 3vh;
         text-align: center;
+        justify-self: center;
+
+        @media (max-width: 1024px) {
+            margin-left: 5vw;
+            margin-right: 5vw;
+            width: 90vw;
+        }
     }
 }
 
@@ -74,6 +141,11 @@
         text-align: right;
         margin-left: auto;
         font-weight: bold;
+        @media (max-width: 1024px) {
+            text-align: left;
+            width: 80vw;
+            font-size: 2.5vh;
+        }
     }
 }
 

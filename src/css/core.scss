@@ -1,239 +1,287 @@
 @use "brand";
 
 :root {
-  background-color: brand.$background-colour;
-  font-family: brand.$font-family-sans-serif;
-  font-weight: 400;
-  color: brand.$foreground-colour;
+    background-color: brand.$background-colour;
+    font-family: brand.$font-family-sans-serif;
+    font-weight: 400;
+    color: brand.$foreground-colour;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 img {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .bg-image {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  z-index: -10;
-  left: 0;
-  @media (max-width: 1024px) {
-    display: none;
-  }
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: -10;
+    left: 0;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 .bg-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
 }
+
 .visually-hidden {
-  overflow: hidden;
-  opacity: 0;
-  position: absolute;
-  width: 1px;
-  height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
 }
 
 
 .button {
-  margin-top: 4vh;
-  background-color: transparent;
-  width: 100%;
-  height: 6vh;
-  color: white;
-  border: 2px solid brand.$primary-colour;
-  font-size: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  --button-fill: 0px;
-  -webkit-box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
-  box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
-  transform: scale(1);
-  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 4vh;
+    background-color: transparent;
+    width: 100%;
+    height: 6vh;
+    color: white;
+    border: 2px solid brand.$primary-colour;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    --button-fill: 0px;
+    -webkit-box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
+    box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
+    transform: scale(1);
+    transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover{
-  --button-fill: 6vh;
+.button:hover {
+    --button-fill: 6vh;
 }
+
 .button:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 
-a, a:visited, a:active, a:hover {
-  color: inherit;
+a,
+a:visited,
+a:active,
+a:hover {
+    color: inherit;
 }
 
 .page-row {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    flex-wrap: nowrap;
+    width: 100%;
     min-height: 100vh;
-  }
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-height: 100vh;
+    }
 }
 
 h1 {
-  color: white;
-  text-align: left;
-  width: 100%;
-  font-size: 5vh;
-  font-weight: 400;
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-size: 5vh;
+    font-weight: 400;
 }
 
 h2 {
-  color: white;
-  text-align: center;
-  width: 100%;
-  font-size: 3vh;
-  padding-bottom: 25vh;
-  display: block;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 3vh;
+    padding-bottom: 25vh;
+    display: block;
 }
 
 ::placeholder {
-  color: black;
-  opacity: 1;
+    color: black;
+    opacity: 1;
 }
 
 ::-ms-input-placeholder {
-  color: black;
+    color: black;
 }
 
 .orange {
-  color: brand.$primary-colour;
+    color: brand.$primary-colour;
 }
 
 section#contact {
-  background-color: white;
-  color: black;
-  display: grid;
-  grid-template-columns: 50vw auto;
-  grid-template-rows: 50vh auto;
-  *:not(.orange) {
+    background-color: white;
     color: black;
-  }
+    display: grid;
+    grid-template-columns: 50vw auto;
+    grid-template-rows: 50vh auto;
+
+    *:not(.orange) {
+        color: black;
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-columns: auto;
+        grid-template-rows: 40vh 30vh auto;
+    }
 }
 
 .contact-text {
-  p {
-    font-size: 6vh;
-  }
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
-  width: 30vw;
-  margin-left: auto;
-  margin-right: 5vw;
-  text-align: right;
-  font-weight: 500;
+    p {
+        font-size: 6vh;
+    }
+
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: 5vw;
+    text-align: right;
+    font-weight: 500;
+
+    @media (max-width: 1024px) {
+        width: 80vw;
+        text-align: left;
+        margin-left: 5vw;
+        margin-right: auto;
+        align-self: end;
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
 }
 
 .contact-header {
-  grid-row: 2 / span 1;
-  grid-column: 1 / span 1;
-  margin-left: auto;
-  margin-right: 5vw;
-  h1 {
-    text-align: right;
-    font-size: 7vh;
-  }
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    margin-left: auto;
+    margin-right: 5vw;
 
-  p {
-    text-align: right;
-    font-size: 5vh;
-    margin-bottom: 0;
-  }
+    h1 {
+        text-align: right;
+        font-size: 7vh;
+    }
+
+    p {
+        text-align: right;
+        font-size: 5vh;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 1024px) {
+        text-align: left;
+        margin-left: 5vw;
+        margin-right: auto;
+
+        p {
+            text-align: left;
+        }
+    }
 }
 
 .contact-form {
-  grid-row: 1 / span 2;
-  grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
 
-  h1 {
-    font-size: 6vh;
-    margin-left: 5vw;
-    a{
-    text-decoration: none;
+    h1 {
+        font-size: 6vh;
+        margin-left: 5vw;
+
+        a {
+            text-decoration: none;
+        }
     }
-  }
+
+    @media (max-width: 1024px) {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+        align-self: start;
+
+        h1 {
+            font-size: 5vh;
+        }
+    }
 }
 
 .contact-form form {
-  width: 40vw;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-form input {
-  font-family: brand.$font-family-sans-serif;
-  font-size: 3vh;
-  border: 0;
-  border-bottom: 3px solid black;
-  margin-bottom: 3vh;
-  padding-bottom: 1vh;
-  padding-top: 1vh;
-  outline: none;
+    font-family: brand.$font-family-sans-serif;
+    font-size: 3vh;
+    border: 0;
+    border-bottom: 3px solid black;
+    margin-bottom: 3vh;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    outline: none;
 }
 
 .contact-form #contact-submit {
-  border: 3px solid black;
-  background-color: white;
-  --button-fill: 0px;
-  -webkit-box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
-  box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
-  transform: scale(1);
-  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 3px solid black;
+    background-color: white;
+    --button-fill: 0px;
+    -webkit-box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
+    box-shadow: inset 0 0 0 var(--button-fill) brand.$primary-colour;
+    transform: scale(1);
+    transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form #contact-submit:hover {
-  --button-fill: 6vh;
+    --button-fill: 6vh;
 }
 
 .contact-form #contact-submit:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .contact-form textarea {
-  font-family: brand.$font-family-sans-serif;
-  font-weight: 400;
-  font-size: 3vh;
-  border: 0;
-  border-bottom: 3px solid black;
-  margin-bottom: 3vh;
-  padding-bottom: 1vh;
-  padding-top: 1vh;
-  outline: none;
+    font-family: brand.$font-family-sans-serif;
+    font-weight: 400;
+    font-size: 3vh;
+    border: 0;
+    border-bottom: 3px solid black;
+    margin-bottom: 3vh;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    outline: none;
 }
 
 #tab-container {
@@ -283,6 +331,7 @@ section#contact {
         margin-left: 5vw;
         height: auto;
         margin-bottom: 3vh;
+
         small {
             font-size: 1.7vh;
         }
@@ -309,5 +358,5 @@ section#contact {
 }
 
 p {
-  font-size: 2vh;
+    font-size: 2vh;
 }

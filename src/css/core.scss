@@ -153,7 +153,7 @@ section#contact {
 
     @media (max-width: 1024px) {
         grid-template-columns: auto;
-        grid-template-rows: 40vh 30vh auto;
+        grid-template-rows: auto auto auto;
     }
 }
 
@@ -230,7 +230,7 @@ section#contact {
         align-self: start;
 
         h1 {
-            font-size: 5vh;
+            font-size: 4vh;
         }
     }
 }

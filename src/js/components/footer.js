@@ -6,12 +6,12 @@ const el = `
             <img src="/img/logo-black.svg" alt="ResQ Systems"/>
         </picture>
 
-        <p class="footer-text">Joining our mailing list</p>
+        <!-- <p class="footer-text">Join our mailing list</p>
 
         <form class="footer-form" onSubmit="return false;">
             <input type="email" id="email" placeholder="someone@example.com"/><br/>
             <input type="submit" id="submit" value="Subscribe"/>
-        </form>
+        </form> -->
     </div>
     <div class="footer-right">
         <a href="mission.html"><p>Our mission</p></a>

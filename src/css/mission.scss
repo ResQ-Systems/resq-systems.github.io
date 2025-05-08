@@ -1,168 +1,170 @@
 @use "brand";
 
 #people-img {
-  background-color: brand.$foreground-on-primary-colour;
-  width: 40vw;
-  height: 40vw;
-  margin: auto;
-  grid-row: 1 / span 2;
+    background-color: brand.$foreground-on-primary-colour;
+    width: 40vw;
+    height: 40vw;
+    margin: auto;
+    grid-row: 1 / span 2;
 
-  @media (max-width: 1024px) {
-    grid-row: 2 / span 1;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    width: 28vh;
-    height: 28vh;
-  }
+    @media (max-width: 1024px) {
+        grid-row: 2 / span 1;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        width: 28vh;
+        height: 28vh;
+    }
 }
 
 #people {
-  color: brand.$foreground-on-primary-colour;
-  background-color: brand.$primary-colour;
-  display: grid;
-  grid-template-columns: 50vw auto;
-  grid-template-rows: auto;
+    color: brand.$foreground-on-primary-colour;
+    background-color: brand.$primary-colour;
+    display: grid;
+    grid-template-columns: 50vw auto;
+    grid-template-rows: auto;
 
-  @media (max-width: 1024px) {
-    grid-template-columns: 100vw;
-    grid-template-rows: 40vh auto;
-  }
+    @media (max-width: 1024px) {
+        grid-template-columns: 100vw;
+        grid-template-rows: 40vh auto;
+    }
 }
 
 #dev {
-  display: grid;
-  grid-template-columns: 60vw auto;
-  grid-template-rows: 30vh auto;
+    display: grid;
+    grid-template-columns: 60vw auto;
+    grid-template-rows: 30vh auto;
 
-  @media (max-width: 1024px) {
-    grid-template-columns: 100vw;
-    grid-template-rows: 35vh 30vh auto;
-  }
+    @media (max-width: 1024px) {
+        grid-template-columns: 100vw;
+        grid-template-rows: auto 30vh auto;
+    }
 }
 
 section#team>div {
-  padding-left: 5vw;
-  font-size: 4vh;
-  margin-bottom: auto;
-  margin-top: 5vh;
+    padding-left: 5vw;
+    font-size: 4vh;
+    margin-bottom: auto;
+    margin-top: 5vh;
 }
 
 .title {
-  width: 100%;
-  font-size: 4vh;
-  margin-left: 5vw;
-  margin-right: auto;
-  padding-top: 30vh;
+    width: 100%;
+    font-size: 4vh;
+    margin-left: 5vw;
+    margin-right: auto;
+    padding-top: 30vh;
 }
 
 .subtitle {
-  margin-left: 5vw;
-  margin-right: auto;
-  font-size: 3.5vh;
-  padding-bottom: 30vh;
+    margin-left: 5vw;
+    margin-right: auto;
+    font-size: 3.5vh;
+    padding-bottom: 30vh;
 }
 
 
 section#dev>div {
-  &:first-of-type {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
+    &:first-of-type {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
 
-    @media (max-width: 1024px) {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
+        @media (max-width: 1024px) {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        h1 {
+            width: 75vw;
+
+            @media (max-width: 1024px) {
+                width: 90vw;
+                font-size: 4vh;
+            }
+        }
     }
 
-    h1 {
-      width: 75vw;
 
-      @media (max-width: 1024px) {
-        width: 90vw;
-        font-size: 4vh;
-      }
+    &:last-of-type {
+        padding-left: 5vw;
+        width: 30vw;
+        margin-bottom: auto;
+        font-size: 2vh;
+
+        @media (max-width: 1024px) {
+            width: 90vw;
+        }
     }
-  }
-
-
-  &:last-of-type {
-    padding-left: 5vw;
-    width: 30vw;
-    margin-bottom: auto;
-    font-size: 2vh;
-
-    @media (max-width: 1024px) {
-      width: 90vw;
-    }
-  }
 
 }
 
 #dev picture {
-  margin-bottom: auto;
+    margin-bottom: auto;
 
-  img {
-    object-fit: contain;
-    width: 55vw;
-    padding-left: 5vw;
-    top: 0;
-  }
+    img {
+        object-fit: contain;
+        width: 55vw;
+        padding-left: 5vw;
+        top: 0;
+    }
 }
 
 @media (max-width: 1024px) {
-  section#dev>picture {
-    width: 90vw;
+    section#dev>picture {
+        width: 90vw;
 
-    img {
-      width: 90vw;
+        img {
+            width: 90vw;
+        }
     }
-  }
 }
 
 section#people>div {
-  margin-left: 2vw;
-  width: 30vw;
-  margin-top: 10vh;
+    margin-left: 2vw;
+    width: 30vw;
+    margin-top: 10vh;
 
-  @media (max-width: 1024px) {
-    margin-left: 5vw;
-    width: 90vw;
-
-  }
-
-  &:first-of-type {
-    align-self: start;
-    justify-self: center;
     @media (max-width: 1024px) {
-      align-self: end;
+        margin-left: 5vw;
+        width: 90vw;
+
     }
-  }
 
-  &:last-of-type {
-    align-self: start;
-    @media (max-width: 1024px) {
-      justify-self: start;
-      margin-top: 0;
+    &:first-of-type {
+        align-self: start;
+        justify-self: center;
+
+        @media (max-width: 1024px) {
+            align-self: end;
+        }
     }
-  }
 
-  h1 {
-    margin-top: 2vh;
-    font-size: 15vh;
-    margin-bottom: 0;
-  }
+    &:last-of-type {
+        align-self: start;
 
-  h3 {
-    font-size: 4vh;
-    margin-top: 0;
-  }
+        @media (max-width: 1024px) {
+            justify-self: start;
+            margin-top: 0;
+        }
+    }
 
-  p {
-    font-size: 2vh;
-  }
+    h1 {
+        margin-top: 2vh;
+        font-size: 15vh;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 4vh;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 2vh;
+    }
 }
